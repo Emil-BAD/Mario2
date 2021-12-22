@@ -168,7 +168,7 @@ def move(hero, movement):
         if y > 0 and level_map[y - 1][x] == ".":
             hero.move(x, y - 1)
     elif movement == "down":
-        if y < max_y - 1 and level_map[y + 1][x] == ".":
+        if y < max_y and level_map[y + 1][x] == ".":
             hero.move(x, y + 1)
     elif movement == "left":
         if x > 0 and level_map[y][x - 1] == ".":
